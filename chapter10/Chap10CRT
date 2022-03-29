@@ -1,0 +1,13 @@
+1. A GUI is a graphical user interface. GUI's typically contain frames, buttons, and text fields that are used to communicate with the user.
+
+2. GUI's are able to communicate with the user through the use of event handler methods. A click of a button or pressing "Enter" after entering text in a text
+field would be considered an event, which would run the code in the event handler method. 
+
+3. Components can not be directly added onto a frame. They must be added onto a content pane like JPanel.
+
+4. A JLabel cannot respond to an event because there is no way or reason to interact with it. A JLabel's purpose is to display information to the user, not receive
+information from the user.
+
+5. To provide a greater degree of insurance that events will run in the correct sequence and without error.
+
+6. A JButton can respond to interaction from the user while the JLabel can not.
