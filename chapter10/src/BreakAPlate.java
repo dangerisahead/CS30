@@ -20,6 +20,7 @@ public class BreakAPlate
 
 	private JFrame frame;
 	private boolean clicked;
+	ImageIcon plates = new ImageIcon("...\\Chapter10\\src\\plates.gif");
 	
 	/**
 	 * Create the application.
