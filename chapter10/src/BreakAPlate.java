@@ -20,7 +20,13 @@ public class BreakAPlate
 
 	private JFrame frame;
 	private boolean clicked;
-	ImageIcon plates = new ImageIcon("...\\Chapter10\\src\\plates.gif");
+	ImageIcon platesIntact = new ImageIcon("...\\Chapter10\\src\\plates.gif");
+	ImageIcon platesAllBroken = new ImageIcon("...\\Chapter10\\src\\plates_all_broken.gif");
+	ImageIcon platesTwoBroken = new ImageIcon("...\\Chapter10\\src\\plates_two_broken.gif");
+	
+	ImageIcon sticker = new ImageIcon("...\\Chapter10\\src\\sticker.gif");
+	ImageIcon tigerPlush = new ImageIcon("...\\Chapter10\\src\\tiger_plush.gif");
+	ImageIcon placeholder = new ImageIcon("...\\Chapter10\\src\\placeholder.gif");
 	
 	/**
 	 * Create the application.
@@ -74,14 +80,14 @@ public class BreakAPlate
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 			
-		JLabel plates = new JLabel(new ImageIcon("C:\\Users\\Anidu\\Desktop\\plates.gif"));
+		JLabel plates = new JLabel(platesIntact);
 		plates.setBackground(new Color(255, 255, 204));
 		plates.setForeground(SystemColor.activeCaption);
 		plates.setOpaque(true);
 		plates.setBounds(255,129,514,146);
 		frame.getContentPane().add(plates);
 		
-		JLabel prize = new JLabel(new ImageIcon("‪C:\\Users\\Anidu\\Desktop\\placeholder.gif"));
+		JLabel prize = new JLabel(placeholder);
 		prize.setBackground(new Color(255, 255, 204));
 		prize.setBounds(255,315,514,100);
 		prize.setOpaque(true);
@@ -115,14 +121,14 @@ public class BreakAPlate
 			        
 			        if (plateOne == plateTwo && plateOne == plateThree)
 			        {
-			        	plates.setIcon(new ImageIcon("C:\\Users\\Anidu\\Desktop\\plates_all_broken.gif"));
-			        	prize.setIcon(new ImageIcon("C:\\Users\\Anidu\\Desktop\\tiger_plush.gif"));
+			        	plates.setIcon(platesAllBroken);
+			        	prize.setIcon(tigerPlush);
 			        }
 			        
 			        else
 			        {
-			        	plates.setIcon(new ImageIcon("C:\\Users\\Anidu\\Desktop\\plates_two_broken.gif"));
-			        	prize.setIcon(new ImageIcon("C:\\Users\\Anidu\\Desktop\\sticker.gif"));
+			        	plates.setIcon(platesTwoBroken);
+			        	prize.setIcon(sticker);
 			        }
 			        
 			        setClicked(false);
@@ -131,8 +137,8 @@ public class BreakAPlate
 				else
 				{
 					btn.setText("Break");
-					plates.setIcon(new ImageIcon("C:\\Users\\Anidu\\Desktop\\plates.gif"));
-					prize.setIcon(new ImageIcon("C:\\Users\\Anidu\\Desktop\\placeholder.gif;"));
+					plates.setIcon(platesIntact);
+					prize.setIcon(placeholder);
 					setClicked(true);
 				}
 			}
