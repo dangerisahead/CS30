@@ -112,7 +112,7 @@ public class BreakAPlate
 		{
 			public void actionPerformed(ActionEvent e) 
 			{
-				if (getClicked() == true)
+				if (clicked = true)
 				{
 					btn.setText("Restart");
 			        int plateOne = (int)((1 - 0 + 1) * Math.random() + 0);
@@ -131,7 +131,7 @@ public class BreakAPlate
 			        	prize.setIcon(sticker);
 			        }
 			        
-			        setClicked(false);
+			        clicked = false;
 				}	
 				
 				else
@@ -139,7 +139,7 @@ public class BreakAPlate
 					btn.setText("Break");
 					plates.setIcon(platesIntact);
 					prize.setIcon(placeholder);
-					setClicked(true);
+					clicked = true;
 				}
 			}
 		});				

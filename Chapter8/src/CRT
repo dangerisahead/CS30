@@ -1,0 +1,35 @@
+1. An "is-a" relationship is between a class derived from an existing class, a "has-a" relationship means means that an instance of one class 
+   references the instance of another class or instance of the same class.
+   
+   For example, a car class has an "is-a" relationship with a Vehicle class, and a "has-a" relationship with a wheel class that allows it to turn. 
+   That wheel class would have an "is-a" relationship with a circle class.
+
+2. Both the public go() method and public stop() method will be available to an object of the derived class.
+
+3. An abstract method forces the derived class to override it, while overriding a regular method is optional. Abstract methods are used
+   when you don't know what the common use of the method will be. For example, an abstract animal class could have an abstract method makeNoise()
+   since animals don't have a common noise they make. Overriding is used when you do have an idea of what the common use of the method will be, but there 
+   are exceptions.
+
+4. An abstract class can have both abstract methods and non-abstract methods (in newer Java it can have default and static as well), 
+   while an interface can only have abstract methods.
+   
+   An abstract class can have both final/non-final and static/non-static variables, an interface can only have static and final.
+   
+   An abstract class can be extended by using "extends", while an interface is implemented by using "implements".
+   
+   An abstract class can another class and multiple interfaces, and interface can only extend other interfaces.
+   
+   Abstract class members can be private, protected, etc. and interface members can only be public.
+   
+ 6. a) doThat() is an abstract method
+    b) Wo is a java interface.
+    c) Ro implements a java interface so it must use its abstract methods.
+    d) doThat(), doThis(), doNow()
+    e)The implementation of doThis() in Roo overrides the implementation of doThis() in Bo
+    f) super(1) copies and applies the parameter int z to Roo and sets it's value to 1, which then sets Roo's inherited x value to 1.
+    g) No, a Roo object cannot call Bo's doThis() method because it is overridden in Roo.
+    h) Yes, by using super.doThis(). here is an example --->   public int doThis()
+                                                               {
+		                                                           return(10 + super.doThis());
+	                                                           }
